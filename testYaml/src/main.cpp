@@ -46,6 +46,15 @@ int main()
     std::cout << "password = " << password << std::endl;
     std::cout << "boolTest = " << boolTest << std::endl;
     std::cout << "dblTest = " << dblTest << std::endl;
+
+    YAML::Node obstacles = config["obstacles"];
+    std::cout << "obstacles.Type(): " << obstacles.Type() << std::endl;
+    std::cout << "obstacles.size(): " << obstacles.size() << std::endl;
+    std::cout << "obstacles[0][size]: " << obstacles[0]["size"] << std::endl;
+    //for (YAML::const_iterator it = obstacles.begin(); it != obstacles.end(); ++it) {
+      //std::cout << it->first.as<int>() << "\n";
+    //}
+
   }
   {
     //VectorXd v;

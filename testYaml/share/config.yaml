@@ -2,3 +2,6 @@ username: 42
 dblTest: 4.2138764832764823654
 boolTest: true
 password: CoucouShareFolder
+obstacles:
+  - {size: 0.3, pos: 0.15}
+  - {size: 1.1, pos: 0.3}
